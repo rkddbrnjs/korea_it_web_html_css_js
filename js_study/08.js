@@ -124,14 +124,14 @@ const products = [
 console.log(products.filter((products) => products.price >= 50000));
 console.log(
   products.map((products) => ({
-    name:products.name,
-    price:products.price
+    name: products.name,
+    price: products.price,
   }))
 );
-console.log(
-    products.map((products)=>{
-        if(products.category === "전자제품"){
-            products.price = products.price*0.1
-        }
-        
-    }))
+const discountProducts = products
+  .filter((product) => product.category === "전자제품")
+  .map((product) => ({
+    name: product.name,
+    price: product.price * 0.9,
+  }));
+console.log(discountProducts);

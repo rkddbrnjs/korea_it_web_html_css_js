@@ -1,0 +1,82 @@
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding-top: 50px;
+	box-sizing: border-box;
+	background-color: #f0f2f5;
+}
+
+.container {
+	background-color: #ffffff;
+	padding: 30px 40px;
+	border-radius: 10px;
+	max-width: 600px;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+	text-align: center;
+}
+
+h1 {
+	font-size: 2em;
+	margin-bottom: 10px;
+	color: #007bff;
+}
+
+header > p {
+	color: #666;
+	font-size: 1em;
+	margin-bottom: 30px;
+}
+
+.fetch-container {
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	margin-top: 20px;
+	background-color: #fcfcfc;
+}
+
+#fetchBtn {
+	background-color: #28a745;
+	color: white;
+	padding: 12px 25px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+	margin-bottom: 25px;
+	transition: backgroud-color 0.3s ease, transform 0.1s ease;
+}
+
+#fetchBtn:hover {
+	background-color: #218838;
+	transform: translateY(-2px);
+}
+
+#fetchBtn:active {
+	transform: translateY(0);
+}
+
+#postContainer {
+	background-color: #f8f9fa;
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	min-height: 120px;
+	text-align: left;
+}
+
+#postContainer > p {
+	white-space: pre-wrap;
+	/* 줄바꿈 유지 */
+	word-wrap: break-word;
+	/* 긴 단어 줄바꿈 */
+}
+
+.post-text {
+	color: #999;
+	text-align: center;
+	font-style: italic;
+	padding-top: 30px;
+}

@@ -64,7 +64,6 @@ main {
 	box-sizing: border-box;
 }
 
-
 h2 {
 	color: #333333;
 }
@@ -169,8 +168,12 @@ p {
 	justify-content: space-between;
 }
 
-.commonBtn {
+#btn-box {
 	display: none;
+	gap: 5px;
+}
+
+.commonBtn {
 	border: none;
 	padding: 7px 15px;
 	font-size: 1em;
